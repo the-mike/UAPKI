@@ -25,9 +25,9 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-const addon = require('./uapki');
+const addon = require('uapki');
 
-console.log('Test API node-addon, addon:', addon)
+console.log('Test API node-addon, addon:', JSON.stringify(addon));
 
 try {
   if (!addon || !addon.version || !addon.load || !addon.unload || !addon.process)
